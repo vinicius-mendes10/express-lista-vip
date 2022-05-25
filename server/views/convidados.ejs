@@ -1,0 +1,16 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main>
+    <h1><%= title %></h1>
+    <p> <%= title %> | Só pra quem pode..."></pode></p>
+    <%if (locals.convidados) { %>
+        <% } %>
+    <ul>
+        <% for(let convidado of convidados) { %>
+            <li> <%= convidados.nome %></li>
+    <% } %>
+    </ul>
+</main>
+
+ <%- include('partials/footer') %>
