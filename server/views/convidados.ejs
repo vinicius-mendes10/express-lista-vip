@@ -8,7 +8,7 @@
         <% } %>
     <ul>
         <% for(let convidado of convidados) { %>
-            <li> <%= convidados.nome %></li>
+            <li> <%= convidados.nome %><%= convidado.vip ? '[vip]' : '' %></li>
     <% } %>
     </ul>
 </main>
